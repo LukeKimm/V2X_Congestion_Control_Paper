@@ -157,7 +157,7 @@ void ReceivePacket_BSM (Ptr<Socket> socket)
       else if (rsu.cycle_num == OBU_NODE-1)
       {
           rsu.time = Simulator::Now ().GetSeconds ();
-          time_diff = rsu.time - rsu.prev_time; // 이전 bsm 받은 시간에서 현재 bsm 받을때까지 걸린 시간
+          time_diff = rsu.time - rsu.prev_time; // 이전 bsm 받은 시간에서 현재 bsm 받기를 위해서 rsu가 대기를 시작한 시간
           std::cout << Simulator::Now ().GetSeconds () << "s>> Time taken from BSM transmission to arrival: "<< time_diff <<  "[s]" << std::endl;
 
           // std::cout << recv_itt_data << std::endl;

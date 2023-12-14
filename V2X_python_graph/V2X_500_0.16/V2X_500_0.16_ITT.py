@@ -29,6 +29,7 @@ plt.plot(WSA_recieved_TIMEs, ITTs, color='blue', marker='o', linestyle='dashed',
 plt.title("ITT stabilizing", fontsize=20)
 plt.xlabel("TIME", fontsize=16)
 plt.ylabel("ITT", fontsize=16)
+plt.ylim([0.07, 0.17])
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.tight_layout()

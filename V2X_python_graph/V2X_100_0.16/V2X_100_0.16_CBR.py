@@ -29,6 +29,7 @@ plt.plot(BSM_TIMEs, CBRs, color='magenta', marker='o', linestyle='dashed', label
 plt.title("CBR stabilizing", fontsize=20)
 plt.xlabel("TIME", fontsize=16)
 plt.ylabel("CBR", fontsize=16)
+plt.ylim([50, 250])
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.tight_layout()
